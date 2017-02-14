@@ -1,0 +1,30 @@
+{
+  "name": "tradist",
+  "version": "1.0.0",
+  "description": "A specialized app for traditional climbers that focuses on gear, skill, exact route locations, and occupancy of routes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuckb1789/Tradist.git"
+  },
+  "author": "Charlie Beck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chuckb1789/Tradist/issues"
+  },
+  "homepage": "https://github.com/chuckb1789/Tradist#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "mongoose": "^4.8.2",
+    "morgan": "^1.8.1",
+    "request": "^2.79.0"
+  }
+}

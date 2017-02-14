@@ -1,0 +1,28 @@
+.body {
+  background-color: rgb(30, 86, 97);
+}
+.title {
+  background-image: url("../images/titleMain2.png");
+  text-align: center;
+  position: relative;
+  width: 90%;
+  padding-bottom: 40%;
+  transform: translateY(50%);
+  margin: 5%;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+/*.login {
+    transform: translateY(100%) translateX(0%);
+    text-align: center;
+    margin: auto;
+    color: white;
+}*/
+.loginInput {
+  color: white;
+  display: block;
+  position: relative;
+  transform: translateX(28vw);
+}
