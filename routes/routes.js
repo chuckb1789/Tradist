@@ -10,8 +10,12 @@ module.exports = function (app) {
   app.use(bodyParser.json());
 
   // GET: / (root route)
-  app.get('/', function (req, res) {
+  app.get('/login', function (req, res) {
       res.sendFile('index.html', { root: './public' });
+  });
+
+  app.get('/signup', function(req, res) {
+      res.sendFile("index.html", {root: './public'});
   });
 
 }

@@ -1,0 +1,14 @@
+.profile {
+  background-color: rgb (233,237,237);
+}
+
+.profilePic {
+  width: auto;
+  height: 30vw;
+}
+
+.pic {
+  height: auto;
+  width: 33%;
+  margin: 0 auto;
+}

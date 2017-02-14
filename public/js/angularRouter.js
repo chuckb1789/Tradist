@@ -4,11 +4,19 @@ angular.module("tradApp", ["ngRoute"])
 angularRouter.$inject = ['$routeProvider']
 function angularRouter ($routeProvider) {
     $routeProvider
-        .when('/',
+        .when('/login',
             {
-                templateUrl: '/htmlPartials/homePage.html',
+                templateUrl: '/htmlPartials/loginPage.html',
                 controller: 'homeCtrl',
                 controllerAs: 'home',
             })
+        .when('/signup',
+            {
+              templateUrl: '/htmlPartials/signupPage.html'
+            })
+        .when('/profile',
+            {
+              templateUrl: '/htmlPartials/profilePage.html'
+            });
 
 }
