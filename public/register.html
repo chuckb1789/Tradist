@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="module.auth">
+    <head>
+        <title>Sign Up!</title>
+        <link rel='stylesheet' href="/css/main.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+        <script src="/js/module.auth.js"></script>
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+  <body class="body" ng-controller="module.auth.controller as auth">
+    <div>
+    <div class="title1">
+      <div class="title2">
+      </div>
+    </div>
+    <br>
+    <div class="formDiv">
+    <div class="loginInput">
+          <form ng-submit="auth.register.submit($event)" class="pure-form pure-form-stacked">
+            <fieldset>
+                <!-- <label for="email">Email</label> -->
+                <input class="inputField" id="email" type="email" required placeholder="Email" ng-model="auth.payloads.register.email"/>
+                <br>
+                <input class="inputField" id="password" type="password" required placeholder="Password" ng-model="auth.payloads.register.password"/>
+                <br>
+                <!-- <input class="inputField" id="password" type="password" required placeholder="Re-Enter Password" ng-model='auth.payloads.register.password'> -->
+                <br>
+                <input id="remember" type="checkbox"> Remember me</input><br>
+                <!-- </label> -->
+                <br/>
+                <button type="submit" class="pure-button pure-button-primary">Register</button>
+                <p ng-class="auth.register.alert">{{ auth.register.message }}</p>
+            </fieldset>
+          </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

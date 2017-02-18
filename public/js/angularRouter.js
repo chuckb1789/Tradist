@@ -1,22 +1,34 @@
-angular.module("tradApp", ["ngRoute"])
+angular.module("tradApp" )
        .config(angularRouter)
 
 angularRouter.$inject = ['$routeProvider']
+
 function angularRouter ($routeProvider) {
     $routeProvider
-        .when('/login',
+        .when('/areas',
             {
-                templateUrl: '/htmlPartials/loginPage.html',
-                controller: 'homeCtrl',
-                controllerAs: 'home',
+                templateUrl: '/htmlPartials/areas.html'
             })
-        .when('/signup',
+        .when('/boulder',
             {
-              templateUrl: '/htmlPartials/signupPage.html'
+                templateUrl: '/htmlPartials/boulder.html',
             })
-        .when('/profile',
+        .when('/golden',
             {
-              templateUrl: '/htmlPartials/profilePage.html'
+              templateUrl: '/htmlPartials/golden.html'
+            })
+        .when('/lyons',
+            {
+              templateUrl: '/htmlPartials/lyons.html'
+            })
+        .when('/sPlatte',
+            {
+              templateUrl: '/htmlPartials/sPlatte.html'
+            })
+        .when('/eldo',
+            {
+              templateUrl: '/htmlPartials/eldo.html',
+              controller: 'routesController'
             });
 
 }

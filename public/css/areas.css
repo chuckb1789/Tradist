@@ -1,0 +1,66 @@
+
+.routeGrid {
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  display: inline-block;
+  zoom: 1;
+  width: 24.5%;
+}
+.boulder {
+  background-image: url("../images/boulder.png");
+  height: 24vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  float: left;
+  margin-left: .25%;
+  margin-right: .25%;
+}
+
+.golden {
+  background-image: url("../images/golden.png");
+  height: 24vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  float: left;
+}
+
+.lyons {
+  background-image: url("../images/lyons.png");
+  height: 24vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  float: left;
+  margin-left: .25%;
+  margin-right: .25%;
+
+}
+
+.sPlatte {
+  background-image: url("../images/sPlatte.png");
+  height: 24vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  float: left;
+}
+.evergreen {
+  background-image: url("../images/evergreen.png");
+  height: 24vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  float: left;
+}
+.estes {
+  background-image: url("../images/estesPark.png");
+  height: 24vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  float: left;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="module.auth">
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS PAGES -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--ANGULAR V1.5.8 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script> -->
+
+    <!--AJAX-->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <!--module.auth.js-->
+    <script src="./js/module.auth.js"></script>
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Tradist</title>
+  </head>
+  <body class="body" ng-controller="module.auth.controller as auth">
+    <div>
+      <a href="/register"><button type="submit" class="pure-button pure-button-primary">Sign Up</button></a>
+    </div>
+    <div>
+      <div class="title1">
+          <div class="title2">
+          </div>
+      </div>
+      <br>
+      <div class="formDiv">
+        <div class="loginInput">
+          <form ng-submit="auth.login.submit($event)" class="pure-form pure-form-stacked">
+              <fieldset>
+                    <!-- <label for="email">Email</label> -->
+                    <input class="inputField" id="email" type="email" required placeholder="Email" ng-model="auth.payloads.login.email"/>
+                    <br>
+                    <!-- <label for="password">Password</label> -->
+                    <input class="inputField" id="password" type="password" required placeholder="Password" ng-model="auth.payloads.login.password">
+                    <br>
+                    <!-- <label for="remember" class="pure-checkbox"> -->
+                    <input id="remember" type="checkbox"> Remember me</input><br>
+                    <!-- </label> -->
+                    <br/>
+                    <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+
+                    <p ng-class="auth.log.alert">{{ auth.login.message }}</p>
+                </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

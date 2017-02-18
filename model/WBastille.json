@@ -1,0 +1,207 @@
+{
+  "Sunshine Daydream": {
+    "Type": "Trad",
+    "Pitches": 1,
+    "Original": "5.10c",
+    "Protection": "Not much"
+    },
+
+  "Rain": { 
+    "Type": "Trad",
+    "Original": "5.10d",
+    "Protection": "Take a standard rack with cams to 3.5 The protection is tricky in spots.  For the first crux (10d), underclinging left under a roof there are a few so-so cams to be placed in an uneven crack.  For the second crux (10d, or easier), you have a bolt just below you.  Some say this is S, but the bolt is not far away.  The face above is certainly runout, but the grade is closer to 5.8 by the time you are far from the bolts.  The route could produce some real thumper falls, and someone could get hurt.  This route should not be taken lightly.smallest TCU's at the first set of  overlaps and then a #3 Camalot"
+    },
+
+  "Chance of Rain": {
+    "Type": "Trad",
+    "Original": "5.11a",
+    "FA": "Mike Brooks and Dan Mcquade",
+    "Year": 1985,
+    "Protection": "The protection is sparse, up to a 3.5 cam, with heavy small gear, I suspect.  I have only TR'd this route though, and doubt that I would lead it soon.
+    TCUs #1.5 Friend. A #3 or 3.5 Friend"
+    },
+
+  "Let Them Eat Cake":  {
+    "Type": "Trad",
+    "Pitches": 1,
+    "Original": "5.12a/b",
+    "FA": "Marc Gay and Brad Bond",
+    "Protection": "Standard Eldo rack up to 3 and a #4 Camalot. Bring extra Tech-Friends 0.5-1. Double ropes would help."
+    },
+
+  "The Early Riser": { 
+    "Type": "Trad",
+    "Pitches": 1,
+    "Original": "5.10a",
+    "FA": "J. Erickson, M. Sharp",
+    "Year": 1981,
+    "Season": "Faces West",
+    "Protection": "As standard light rack: cams from small to hand-size and a few nuts if needed.  Some longer slings are advised, as well as a cordalette for the tree-belay."
+    },
+
+  "West Arete": {
+    "Type": "Trad",
+    "Pitches": 2,
+    "Original": "5.8",
+    "FA": "Duncan Ferguson",
+    "Fixed Hardware": "2 Belay Bolts",
+    "Protection":" Standard rack"
+    },
+
+  "Cream": { 
+    "Type": "Trad",
+    "Pitches": 1,
+    "Original": "5.10b",
+    "FA": "Derek Hersey, Robb Cadwell",
+    "Protection": "A regular Eldo rack will suffice, a few wires, and Aliens, and a handful of shoulder length slings"
+    },
+
+  "Hair City": {
+    "Type": "Trad",
+    "Pitches": 3,
+    "Original":  "5.9+",
+    "FA": "Jim Erickson, John Behrens, Stand Badgett",
+    "Year": 1969,
+    "Fixed Hardware": ["2 Lead Bolts", "1 Lead Pin", "2 Belay Bolts"],
+    "Protection": "This is a slightly runout route. It has a pin & 2 bolts on the first pitch, the rest of the pitch takes medium stoppers, an RP, a couple TCUs and I slung a hole in the rock (quite bomber actually).  There is a pin right of the final leftward traverse. The first belay is a double bolt anchor."
+    },
+
+  "Your Mother": {
+    "Type": "Sport",
+    "Original": "5.12d",
+    "FA": "Colin Lantz",
+    "Fixed Hardware": ["7 Lead Bolts", "2 Anchor Bolts"],
+    "Protection": "This is entirely a sport route, though you may be able to place a shaky piece before the first bolt if you're gripped.  A #2 Camalot should be sufficient to anchor your belayer on the ledge."
+    },
+
+  "West Buttress": {
+    "Type": "Trad",
+    "Pitches": 3,
+    "Original": "5.9+",
+    "FA": "Layton Kor",
+    "Fixed Hardware": ["2 Lead Pins", "4 Belay Bolts"],
+    "Protection": "Standard rack to a #4 Friend"
+    },
+
+  "Serengeti Spaghetti": {
+    "Type": "Trad",
+    "Pitches": 1,
+    "Original": "5.10b",
+    "FA": "M. Brooks and D. Smith",
+    "Years": 1982,
+    "Season": "Faces West",
+    "Protection": "The protection on this route is frightening.  Little wonder the route is rarely done.  I hve never seen another party on it in 6 years, nor have I heard of anyone doing it.  Just as the moves get easier, the rock and pro go from bad to worse.  You might get a tricam or some nuts lower down.  The rock at and above the roof is bad, so nothing is very good.  You must be solid at the grade to do this route."
+    },
+
+  "Implied Consent": { 
+    "Type": "Trad",
+    "Pitches": 1,
+    "Original": "5.9",
+    "FA": "Jim Erickson",
+    "Year": 1980,
+    "Protection": "It is probably best to TR, or bring a standard Eldo rack."
+    },
+
+  "Sunset Boulevard": {
+    "Type": "Sport",
+    "Original":  "5.11b",
+    "FA": "Chris Archer and company",
+    "Year": 1997,
+    "Fixed Hardware": ["1 Lead Pin", "6 Lead Bolts", "2 Belay Bolts"],
+    "Protection": "7 or so bolts and a pin down low. Bring some long draws for the first couple clips."
+    },
+
+  "Blind Faith": {
+    "Type": "Trad",
+    "Pitches": 2,
+    "Original": "5.10a",
+    "FA": "Jim Erickson",
+    "Year": 1972,
+    "Protection": "Standard rack of cams and nuts. No RPs or cams larger than a #2 Camalot are needed."
+    },
+
+  "West Face": { 
+    "Type": "Trad",
+    "Pitches": 2,
+    "Length": 270,
+    "Original": "5.11a",
+    "FA": "Layton Kor",
+    "Fixed Hardware": "1 Lead Pin",
+    "Protection": "Nuts, including RPs.  Set of cams up to #2 Camalot."
+    },
+
+  "Neon Lights": {
+    "Type": "Trad",
+    "Pitches": 2,
+    "Original": "5.11a",
+    "FA": "Art Higbee, Jim Erickson, John Ruger, Ed Webster",
+    "Year": 1975,
+    "Fixed Hardware": "1 Lead Bolt",
+    "Protection": "The protection on the rarely done first pitch crux is a poor pink or red tricam above some nuts that are lower down.  The second pitch, which is easily reached without doing the first can be protected with a few bolts and hand-sized cams."
+    },
+
+  "Voodoo": {
+    "Type": "Trad",
+    "Original":  "5.8",
+    "FA": "Harrison, Stuberg, Brooks",
+    "Year": 1981,
+    "Protection": "Small cams and medium hexes"
+  },
+
+  "Out to Lunge ... with Dessert ": {
+    "Type": "Trad",
+    "Pitches": 1,
+    "Length": 100,
+    "Original": "5.9",
+    "FA": "Unknown",
+    "Protection": "Bring the same as for Out To Lunge"
+    },
+
+  "Out to Lunge": {
+    "Type": "Trad",
+    "Pitches": 2,
+    "Original": "5.9",
+    "FA": "Bob Culp, Alan Clark, John Link",
+    "Year": 1968,
+    "Protection": "Bring a full set of nuts, single rack of cams up to a #3, and several standard length runners."
+    },
+
+  "New Chautauqua": {
+    "Type": "Trad",
+    "Pitches": 1,
+    "Length": 100,
+    "Original": "5.10c",
+    "FA": "E. Webster, C. Dreimen",
+    "Year": 1984,
+    "Fixed Hardware": "2 Lead Pins",
+    "Protection": "A standard light rack - 1 set stoppers, one set cams, a few Tricams if desired and a few draws for the so-so pins that protect the crux moves. Bring some LONG slings to avoid drag on this zig-zag line."
+    },
+
+  "Breakfast in Bed": {
+    "Type": "Trad",
+    "Pitches": 1,
+    "Original": "5.8",
+    "FA": "Briggs & Candelaria",
+    "Year": 1975,
+    "Protection": "Standard Eldo rack (with perhaps some longer runners)"
+    },
+
+  "Stem Gem": {
+    "Type": "Trad",
+    "Pitches": 1,
+    "Original": "5.11+",
+    "FA": "Alex Shainman",
+    "Year": 2000,
+    "Protection": "Small TCUs/Aliens, sm/med wireds, #1.5 + #2 Friends"
+    },
+
+  "West Side aka West Chimney": {
+    "Type": "Trad",
+    "Pitches": 2,
+    "Length": 300,
+    "Original": "5.7",
+    "FA":"unknown",
+    "Fixed Hardware": "1 Lead Pin",
+    "Protection": "Standard rack"
+    }
+}

@@ -1,5 +1,5 @@
 .body {
-  background-color: rgb(30, 86, 97);
+  background-color: rgb(26,27,17);
   float: center;
   text-align: center;
 }
@@ -30,7 +30,7 @@
 
 .loginInput {
   width: 100%;
-  color: white;
+  color: gray;
   display: inline-block;
   position: relative;
 

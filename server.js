@@ -1,25 +1,30 @@
-//=============Require Express=======================
-var express = require('express');
-var app = express(app);
+var express = require('express'),
+    routes = require('./routes/routes.js')
+var app = express();
+routes(app);
 
-//=============Require Morgan========================
+
 var logger = require('morgan');
 app.use(logger('dev'));
 
-//=============Require Module Export=================
 var request = require('request');
 
-//=============Require Mongoose======================
 var mongoose = require('mongoose');
+// mongoose.connect('mongodb://localhost/authdemo');
 
-//=============Require Body Parser===================
 var bodyParser = require("body-parser");
 
-//=============Require HTTPS=======================
 var HTTP = require('http');
 var HTTPS = require('https');
-
 fs = require('fs');
+
+var bcrypt = require('bcryptjs');
+
+var sessionsModule = require('client-sessions')
+
+
+
+
 
 //=============ENVIRONMENT VARIABLES==================
 var APP_DIR=process.env.APP_DIR
@@ -46,8 +51,8 @@ console.log(APP_DIR);
 
 
 //================REQUIRE ROUTES========================
-var router = require('./routes/routes.js');
-router(app);
+// var router = require('./routes/routes.js');
+// router(app);
 
 // start an http server listening on the default port
 
@@ -75,5 +80,3 @@ app.listen(PORT, function(err) {
 // } catch (e) {
 //     console.error('Could not HTTPS server:', e);
 // }
-
-//=============Set Up Ports for Listening================

@@ -6,17 +6,20 @@
 <br>
   <div class="formDiv">
     <div class="loginInput">
-        <form class="pure-form pure-form-stacked">
+        <form ng-submit="auth.register.submit($event)" class="pure-form pure-form-stacked">
             <fieldset>
                 <!-- <label for="email">Email</label> -->
-                <input class="inputField" id="email" type="email" placeholder="Email">
-              <br>
-                <input class="inputField" id="password" type="password" placeholder="Password"><br>
-                <input class="inputField" id="password" type="password" placeholder="Re-Enter Password"><br>
+                <input class="inputField" id="email" type="email" required placeholder="Email" ng-model="auth.payloads.register.email">
+                <br>
+                <input class="inputField" id="password" type="password" required placeholder="Password" ng-model="auth.payloads.register.password">
+                <br>
+                <input class="inputField" id="password" type="password" required placeholder="Re-Enter Password" ng-model='auth.payloads.register.password'>
+                <br>
                 <input id="remember" type="checkbox"> Remember me</input><br>
                 <!-- </label> -->
-              <br/>
+                <br/>
                 <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+                <p ng-class="auth.register.alert">{{ auth.register.message }}</p>
             </fieldset>
       </form>
     </div>

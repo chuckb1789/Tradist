@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="tradApp">
+  <head>
+      <meta charset="utf-8">
+    <!-- CSS PAGES -->
+      <link rel="stylesheet" type="text/css" href="/css/profile.css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css">
+      <link rel="stylesheet" type="text/css" href="/css/areas.css">
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!---ANGULAR ROUTER-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <!--angularRouter.js-->
+      <script src="/js/routesModule.js"></script>
+      <script src="/js/controller.js"></script>
+
+      <script src="/js/angularRouter.js"></script>
+    <!--AJAX-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--Favicon-->
+      <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+    <title>Tradist</title>
+  </head>
+<body class="body">
+  <div>
+      <div class="profilePic1">
+        <div class="routeButton row1">
+          <div class="button">
+            <a ng-href="#/areas"><button type="submit" class="pure-button pure-button-active button">Find A Route!</button></a>
+          </div>
+        </div>
+        <div class="profilePic2 row1">
+          <img class="pic img-circle img-responsive"  alt="Responsive Image" src="./images/IMG_2320.jpg" max-width=40%>
+        </div>
+        <div class="gearButton row1">
+          <div class="button">
+            <a><button type="submit" class="pure-button pure-button-active button">Add Some Gear!</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="gearDiv1 pure-u-1">
+        <div class="gearDiv2">
+          <br/>
+              <h1>Gear</h1>
+          <br/>
+            <div>
+              <div class="dropdown gearAdd">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Gear
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <option class="gearItems">Action</option>
+                  <option class="gearItems">Another action</option>
+                  <option class="gearItems">Something else here</option>
+                  <option class="gearItems">Separated link</option>
+                </ul>
+              </div>
+              <div class="dropdown gearAdd">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Quantity
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li class="gearItems">1</li>
+                  <li class="gearItems">2</li>
+                  <li class="gearItems">3</li>
+                  <li class="gearItems">4</li>
+                  <li class="gearItems">5</li>
+                </ul>
+              </div>
+            </div>
+          <!-- <nav class="gearList1">
+            <ul class="gearList1 gearList2">
+            </ul>
+          </nav> -->
+        </div>
+      </div>
+    <br>
+    <div class="climbsDiv1 pure-u-1">
+      <div class="climbsDiv2">
+        <br/>
+          <h2>ROUTE FINDER</h2>
+        <ng-view>
+
+        </ng-view>
+        </nav>
+      </div>
+    </div>
+</div>
+</body>
+</html>

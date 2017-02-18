@@ -1,14 +1,96 @@
 .profile {
-  background-color: rgb (233,237,237);
+  background-color: rgb (26,27,17);
 }
 
-.profilePic {
+.profilePic1 {
   width: auto;
   height: 30vw;
+  background-image: url("../images/profileHeader.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.profilePic2 {
+  /*display: inline;
+  width: 33%;*/
+  height: 30vw;
+  /*background-image: url("../images/mountainsProfile.png");*/
+  /*background-repeat:no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding-bottom: 20%;*/
+}
+
+.row1 {
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: middle;
+  text-rendering: auto;
+  display: inline-block;
+  zoom: 1;
+  width: 32.3333%;
 }
 
 .pic {
   height: auto;
-  width: 33%;
+  width: 100%;
   margin: 0 auto;
+  padding-top: 15%;
+}
+
+.gearDiv1 {
+width: 100%;
+}
+
+.gearDiv2 {
+  background-color: rgb(233,237, 237);
+  width: 96%;
+  min-height: 70vh;
+  max-height: 1000vh;
+  margin-left: 2vw;
+  border-radius: 20px;
+}
+
+.gearAdd {
+  /*padding-left: 20%;*/
+  text-align: left;
+  display: inline-block;
+}
+
+.gearItems {
+  text-align: center;
+}
+
+.gearList1 {
+  overflow: hidden;
+  overflow-x: scroll;
+  height: 40vw;
+  width: 100%;
+}
+.gearList2 {
+  -moz-column-count: 6;
+  -moz-column-gap: 3%;
+  -webkit-column-count: 6;
+  -webkit-column-gap: 3%;
+  column-count: 6;
+  column-gap: 3;
+}
+
+.climbsDiv1 {
+width: 100%;
+padding-top: 2vh;
+}
+
+.climbsDiv2 {
+  background-color: rgb(233,237, 237);
+  width: 96%;
+  min-height: 70vh;
+  max-height: 1000vh;
+  margin-left: 2vw;
+  border-radius: 20px;
+}
+
+.routeList {
+  list-style: none;
+  text-align: left;
 }
