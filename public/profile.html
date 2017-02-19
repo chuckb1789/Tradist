@@ -98,13 +98,13 @@
         </div>
       </div>
     <br>
-    <div class="climbsDiv1 pure-u-1">
+    <div ng-controller="routesController as routesCtrl" class="climbsDiv1 pure-u-1">
       <div class="climbsDiv2">
         <br/>
-          <h2>ROUTE FINDER</h2>
-        <ng-view>
+          <h2>{{routesCtrl.title}}</h2>
+            <ng-view>
 
-        </ng-view>
+            </ng-view>
         </nav>
       </div>
     </div>

@@ -101,7 +101,7 @@ var NBastille = [
   {   name:  "Liquor Mart",
       type: "Trad",
       pitches: 1,
-      original: 5.11,
+      original: "5.11",
       fa: "Chip Ruckgaber, Dan Hare",
       year: 1984,
       season: "Spring, Summer, Fall",
@@ -111,7 +111,7 @@ var NBastille = [
   {   name:  "March of Dimes",
       type: "Trad",
       pitches: 3,
-      original: 5.10,
+      original: "5.10a",
       fa: "Dudley Chelton and Duncan Ferguson",
       fixedHardware: "2 Belay Bolts, 2 Anchor Bolts",
       protection: "#0 TCU/blue Alien up to a #3 Camalot will suffice",
@@ -150,7 +150,7 @@ var NBastille = [
   {   name:"Shatek's Ramp-age",
       type:  "Trad",
       pitches: 1,
-      original: 5.8,
+      original: "5.8",
       fa: "Unknown",
       protection: "Bring a normal rack; mostly mid-sized pieces"
       },
@@ -207,7 +207,7 @@ var NBastille = [
   {   name:"Madame Guillotine",
       type: "Sport",
       pitches: 1,
-      original: 5.12,
+      original: "5.12",
       fa: "Erik Fedor, Rob Candelaria",
       year: 1989,
       fixedHardware: "9 Lead Bolts",
@@ -272,7 +272,7 @@ var NBastille = [
 
   {   name:"The Spice Tour",
       type: "Trad",
-      original: 5.11,
+      original: "5.11",
       fa: "Suggested by Tague and Levin",
       protection: " Standard Eldo rack, with RPs, Aliens to a 2.5 cam."
       },
@@ -289,12 +289,22 @@ var NBastille = [
       },
 ]
 
-module.exports = {
-  getRouteNames: function(index) {
+  function findOne (index) {
       return NBastille[index];
-  },
+  };
 
-  getAllRoutes: function() {
+  function findAll() {
     return NBastille;
-  }
-}
+  };
+
+  function findProtection(protection) {
+    return NBastille.filter(function(route) {
+            return (route.protection === protection);
+    });
+  };
+
+module.exports = {
+        findAll         : findAll,
+        findOne         : findOne,
+        findProtection  : findProtection,
+};

@@ -1,7 +1,5 @@
-var express = require('express'),
-    routes = require('./routes/routes.js')
+var express = require('express');
 var app = express();
-routes(app);
 
 
 var logger = require('morgan');
@@ -22,8 +20,29 @@ var bcrypt = require('bcryptjs');
 
 var sessionsModule = require('client-sessions')
 
+//Middleware so we can see our req object info.
+app.use(function(req, res, next){
 
+	var requestInfo = {
+		method  : req.method, // What kind of request is this? GET, PUT, POST or DELETE
+		path    : req.path,   // URL the request is going to
+		query   : req.query,  // Info from GET requests
+		body    : req.body,   // Info from POST requests
+		params  : req.params, // Info from dynamic / paramaterized URLs
 
+		// ip       : req.ip,       // IP address
+		// protocol : req.protocol, // HTTP / HTTPS
+		// headers  : req.headers,  // Headers from request
+		// hostname : req.hostname  // Hostname
+	};
+
+	// console.log(req);
+	console.log(requestInfo);
+	next(); // Let the middleware chain continue
+
+});
+
+require('./routes/routes.js')(app);
 
 
 //=============ENVIRONMENT VARIABLES==================

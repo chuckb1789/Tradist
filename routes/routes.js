@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
 
-var API = require('./api.js')
+var NBastilleLibrary = require('./NBastilleLibrary.js')
 
 
 
@@ -89,8 +89,6 @@ module.exports = function (app) {
         res.sendFile("register.html", {root: APP_DIR +'/public'})
     })
 
-
-
     app.get('/profile', checkIfLoggedIn, function(req, res){
 
         User.findOne({_id: req.session.uid}, function(err, user){
@@ -100,9 +98,7 @@ module.exports = function (app) {
     });
 
 
-    app.get('/NBastille', function(req, res) {
-        res.send("NBastille.json")
-    })
+
 
     app.get('/whoami', checkIfLoggedInForAjax, function(req, res){
         User.findOne({_id: req.session.uid}, function(err, user){
@@ -185,6 +181,8 @@ module.exports = function (app) {
         res.redirect('/');
     });
 
+    app.get('/NBastille/routes', NBastilleLibrary.routes);
 
-    app.get('./api.js', API.getData)
-}
+    // app.get('/NBastille/protection', NBastilleLibrary.protection);
+
+};
