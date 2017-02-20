@@ -31,7 +31,9 @@ function routesFunction($http) {
                 console.log("Route Rating:", routesCtrl.routesRating)
                 //Create list of routes with difficult level under 5.11
                 for (var i=0; i<32; i++) {
-                  if (routesCtrl.routeInfo[i].original === "5.7" ||
+                  if (routesCtrl.routeInfo[i].original === "5.5" ||
+                      routesCtrl.routeInfo[i].original === "5.6" ||
+                      routesCtrl.routeInfo[i].original === "5.7" ||
                       routesCtrl.routeInfo[i].original === "5.8" ||
                       routesCtrl.routeInfo[i].original === "5.9+" ||
                       routesCtrl.routeInfo[i].original === "5.10" ||

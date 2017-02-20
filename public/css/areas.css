@@ -73,20 +73,3 @@
   background-image: url("../images/sPlatte.png");
   transform: perspective(500px) rotateY(-15deg);
 }
-
-/*.evergreen {
-  background-image: url("../images/evergreen.png");
-  height: 45vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  float: left;
-}
-.estes {
-  background-image: url("../images/estesPark.png");
-  height: 45vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  float: left;
-}*/
