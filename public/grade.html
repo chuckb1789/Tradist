@@ -57,7 +57,10 @@
             <li><a href="/logout">Log Out</a></li>
         </ul>
     </nav>
+    <br/>
+    <div class="titleImage"></div>
     <div class="center-on-page">
+        <form>
         <h1>Max Difficulty</h1>
         <div class="select">
             <select name="slct" id="slct">
@@ -138,6 +141,9 @@
                <option value="19">5.15c</option>
              </select>
    	     </div>
+         <input class="gradeButton customButton" ng-click="routesCtrl.grade()" type="submit" value="Submit">
+         <p ng-class="gradeSubmit.alert">{{ gradeSubmit.message }}</p>
+       </form>
       </div>
   </body>
 </html>

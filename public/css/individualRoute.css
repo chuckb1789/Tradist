@@ -16,11 +16,33 @@
   margin-right: 2%;
 }
 
-.left {
+.row1 {
   text-align: left;
-  padding-left: 7%;
 }
 
+.left {
+  height: 100%;
+  width: 25vw;
+  padding-left: 2%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.center {
+  height: 100%;
+  width: 25vw;
+  padding-left: 2%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right {
+  height: 100%;
+  width: 25vw;
+  padding-left: 2%;
+  display: inline-block;
+  vertical-align: top;
+}
 .box2 {
   background-color: #9f9f9f;
   height: 30vh;
@@ -34,11 +56,19 @@
 
 .box3 {
   background-color: #9f9f9f;
-  height: 30vh;
+  height: 40vh;
   border-radius: 10px;
   float: left;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+.right3 {
+  height: 100%;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: inline-block;
+  vertical-align: top;
 }

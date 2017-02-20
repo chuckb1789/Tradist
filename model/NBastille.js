@@ -1,7 +1,7 @@
 var NBastille = [
 
   {   name: "Outer Face",
-      original: "5.10",
+      original: "5.10a",
       risk: "R",
       fa: "Rob Candelaria & Roger Briggs",
       year: 1976,
@@ -93,7 +93,7 @@ var NBastille = [
   {   name:  "Wide Times",
       type: "Trad",
       pitches: 1,
-      original: "5.11-",
+      original: "5.11a",
       fa: "???",
       protection: "WC rack recommendation plus QD for last bolt on TS.",
       },
@@ -101,7 +101,7 @@ var NBastille = [
   {   name:  "Liquor Mart",
       type: "Trad",
       pitches: 1,
-      original: "5.11",
+      original: "5.11a",
       fa: "Chip Ruckgaber, Dan Hare",
       year: 1984,
       season: "Spring, Summer, Fall",
@@ -190,7 +190,7 @@ var NBastille = [
   {   name:"Coach's Demise",
       type: "Trad",
       pitches: 1,
-      original:  "5.9+",
+      original:  "5.9",
       fa: "Ed Body & Mike Brooks",
       year: 1985,
       fixedHardware: "4 Lead Pins",
@@ -199,7 +199,7 @@ var NBastille = [
 
   {   name:"Direct North Face", 
       type: "Trad",
-      original:  "5.11-",
+      original:  "5.11a",
       fa: "Unknown",
       protection: "Standard Eldo rack",
       },
@@ -218,7 +218,7 @@ var NBastille = [
   {   name:"Hairstyles and Attitudes",
       type: "Trad",
       pitches: 1,
-      original: "5.12b/c",
+      original: "5.12b",
       fa: "D. Michael, R. Briggs",
       year: 1988,
       fixedHardware: "4 Anchor Bolts, 10 Lead Bolts",
@@ -236,7 +236,7 @@ var NBastille = [
   {   name:"Werk Supp",
       type: "Trad",
       pitches: 2,
-      original: "5.9+",
+      original: "5.9",
       fa: "Pat Ament, Rick Warsfield, Pat Ament, Dave Rearick",
       fixedHardware: "1 Lead Pin, 2 Belay Bolts",
       protection: "#4 Friend, #3 (2), #2.5(2), small gear"
@@ -255,10 +255,12 @@ var NBastille = [
       type: "Trad",
       pitches: 5,
       original: "5.7",
+      vertical: 350,
       fa: "US Army climbers",
       year: 1954,
       fixedHardware: "2 Belay Bolts",
-      protection: "Standard rack to #3 Camalot, #4 Camalot"
+      protection: "Standard rack to #3 Camalot, #4 Camalot",
+      description: "One of the most classic climbs in the country, it begins right off the road on the Bastille, a 350 foot cliff on the left as you enter the canyon. Often crowded, a weekday is probably the best time to attempt this climb. The climb is north facing and in the shade until mid-afternoon. To descend: follow deep grooves to the south until you reach a dirt trail. Go 30 feet west and then follow the marked Bastille descent trail north and down to the road at the base of the cliff."
       },
 
   {   name:"Interceptor",
@@ -272,7 +274,7 @@ var NBastille = [
 
   {   name:"The Spice Tour",
       type: "Trad",
-      original: "5.11",
+      original: "5.11a",
       fa: "Suggested by Tague and Levin",
       protection: " Standard Eldo rack, with RPs, Aliens to a 2.5 cam."
       },

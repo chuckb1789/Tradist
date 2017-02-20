@@ -8,8 +8,14 @@
   float: left;
   margin-left: 3.25%;
   margin-right: 2.25%;
+  -webkit-transition: .2s;
 }
-
+.bcc:hover {
+  transition: .2s;
+  background-image: url("../images/boulderCanyon.png");
+  transform: perspective(500px) rotateY(15deg);
+  -webkit-transition: .2s;
+}
 .eldo {
   background-image: url("../images/eldo.png");
   height: 45vw;
@@ -17,6 +23,12 @@
   background-size: cover;
   border-radius: 10px;
   float: left;
+  -webkit-transition: .2s;
+}
+.eldo:hover {
+  transition: .2s;
+  background-image: url("../images/eldo.png");
+  transform: perspective(500px) rotateY(-15deg);
 }
 
 
@@ -30,7 +42,13 @@
   margin-left: 3.25%;
   margin-right: 2.25%;
   margin-top: 2.25%;
+  -webkit-transition: .2s;
 
+}
+.eldoMtn:hover {
+  transition: .2s;
+  background-image: url("../images/eldoMtn.png");
+  transform: perspective(500px) rotateY(15deg);
 }
 
 .flagstaff {
@@ -41,6 +59,12 @@
   border-radius: 10px;
   float: left;
   margin-top: 2.25%;
+  -webkit-transition: .2s;
+}
+.flagstaff:hover {
+  transition: .2s;
+  background-image: url("../images/flagstaff.png");
+  transform: perspective(500px) rotateY(-15deg);
 }
 
 .flatirons {
@@ -53,8 +77,13 @@
   margin-left: 3.25%;
   margin-right: 2.25%;
   margin-top: 2.25%;
+  -webkit-transition: .2s;
 }
-
+.flatirons:hover {
+  transition: .2s;
+  background-image: url("../images/flatirons.png");
+  transform: perspective(500px) rotateY(15deg);
+}
 .upperDream {
   background-image: url("../images/upperDream.png");
   height: 45vw;
@@ -63,4 +92,10 @@
   border-radius: 10px;
   float: left;
   margin-top: 2.25%;
+  -webkit-transition: .2s;
+}
+.upperDream:hover {
+  transition: .2s;
+  background-image: url("../images/upperDream.png");
+  transform: perspective(500px) rotateY(-15deg);
 }

@@ -1,4 +1,13 @@
+@font-face {
+    font-family: Norwester;
+    src: url("../images/norwester.otf") format("opentype");
+}
 
+@font-face {
+    font-family: Norwester;
+    font-weight: bold;
+    src: url("../images/norwester.otf") format("opentype");
+}
 .center-on-page {
   position: absolute;
   top: 50%;
@@ -7,7 +16,7 @@
 }
 h1 {
   text-align: center;
-  color: #e5f6ed !important;
+  color: white !important;
 }
 
 /* Reset Select */

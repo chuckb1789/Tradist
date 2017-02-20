@@ -17,6 +17,12 @@
   float: left;
   margin-left: 3.25%;
   margin-right: 2.25%;
+  -webkit-transition: .2s;
+}
+.boulder:hover {
+  transition: .2s;
+  background-image: url("../images/boulder.png");
+  transform: perspective(500px) rotateY(15deg);
 }
 
 .golden {
@@ -26,6 +32,12 @@
   background-size: cover;
   border-radius: 10px;
   float: left;
+  -webkit-transition: .2s;
+}
+.golden:hover {
+  transition: .2s;
+  background-image: url("../images/golden.png");
+  transform: perspective(500px) rotateY(-15deg);
 }
 
 .lyons {
@@ -38,7 +50,12 @@
   margin-left: 3.25%;
   margin-right: 2.25%;
   margin-top: 2.25%;
-
+  -webkit-transition: .2s;
+}
+.lyons:hover {
+  transition: .2s;
+  background-image: url("../images/lyons.png");
+  transform: perspective(500px) rotateY(15deg);
 }
 
 .sPlatte {
@@ -49,9 +66,15 @@
   border-radius: 10px;
   float: left;
   margin-top: 2.25%;
+  -webkit-transition: .2s;
+}
+.sPlatte:hover {
+  transition: .2s;
+  background-image: url("../images/sPlatte.png");
+  transform: perspective(500px) rotateY(-15deg);
 }
 
-.evergreen {
+/*.evergreen {
   background-image: url("../images/evergreen.png");
   height: 45vw;
   background-repeat: no-repeat;
@@ -66,4 +89,4 @@
   background-size: cover;
   border-radius: 10px;
   float: left;
-}
+}*/
