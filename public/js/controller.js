@@ -8,6 +8,7 @@ function routesFunction($http) {
   routesCtrl.title = "ROUTE FINDER";
   console.log(routesCtrl.title);
 
+  routesCtrl.weather = [];
   routesCtrl.routeInfo=[];
   routesCtrl.routes = [];
   routesCtrl.routesRating = [];
@@ -49,5 +50,16 @@ function routesFunction($http) {
           };
   routesCtrl.getRoutes()
 
+  routesCtrl.getWeather = function () {
+        var url = window.location.protocol+'//'+window.location.host+'/weather'
+        $http.get(url)
+             .then(function successCallback(response) {
+               routesCtrl.weather = response.data
+               console.log("WEATHER INFO:", routesCtrl.weather)
+
+             }, function errorCallbck(response){
+                 console.log("error retrieving information")
+             });
+         };
 
 };

@@ -34,6 +34,10 @@ function angularRouter ($routeProvider) {
             {
               templateUrl: '/htmlPartials/outerFace.html'
             })
+        .when('/weather',
+              {
+                controller: 'routesController'
+              })
 
 
 }

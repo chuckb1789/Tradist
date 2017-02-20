@@ -3,7 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
-
+var request = require('request');
 var NBastilleLibrary = require('./NBastilleLibrary.js')
 
 
@@ -28,6 +28,7 @@ module.exports = function (app) {
     var User = mongoose.model('User', UserSchema)
 
     var APP_DIR=process.env.APP_DIR
+    var APIKEY=process.env.APIKEY
 
     app.get('*', function (req, res, next) {
         console.log(req.method, req.path)
@@ -199,6 +200,24 @@ module.exports = function (app) {
 
     app.get('/NBastille/routes', NBastilleLibrary.routes);
 
-    // app.get('/NBastille/protection', NBastilleLibrary.protection);
+    // unirest.post("https://community-sentiment.p.mashape.com/batch/")
+    //     .header("X-Mashape-Key", "HVDEIORzr7mshxcS5tYJyLfzkBiDp1wJQ56jsnxPbteT9Sgdpy")
+    //     .header("Content-Type", "application/x-www-form-urlencoded")
+    //     .header("Accept", "application/json")
+    //     .send(myJson)
+    //     .end(function(result){
+    //         newsSentimentArray = result.body;
+    //     });
+    //
+    eldo = 'https://api.darksky.net/forecast/'+APIKEY+'/39.940786,-105.255930'
+
+    app.get('/weather', function(req,res) {
+        console.log("ENTER WEATHER GET FUNCTION")
+        request.get('https://api.darksky.net/forecast/'+APIKEY+'/39.940786,-105.255930',function(error,response,body){
+              console.log("RETRIEVING:", eldo)
+              console.log(body)
+              res.send(body) })});
+
+
 
 };
