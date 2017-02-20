@@ -211,11 +211,9 @@ module.exports = function (app) {
     //
     eldo = 'https://api.darksky.net/forecast/'+APIKEY+'/39.940786,-105.255930'
 
-    app.get(APP_DIR+'/weather', function(req,res) {
+    app.get('/weather', function(req,res) {
         console.log("ENTER WEATHER GET FUNCTION")
-        request.get('https://api.darksky.net/forecast/'+APIKEY+'/39.940786,-105.255930',function(error,response,body){
-              console.log(body)
-              res.send(body) })});
+        request.get('https://api.darksky.net/forecast/'+APIKEY+'/39.940786,-105.255930',function(error,response,body){ res.send(body) })});
 
 
 
