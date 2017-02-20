@@ -1,15 +1,6 @@
 
-.routeGrid {
-  letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: top;
-  text-rendering: auto;
-  display: inline-block;
-  zoom: 1;
-  width: 45%;
-}
-.boulder {
-  background-image: url("../images/boulder.png");
+.bcc {
+  background-image: url("../images/boulderCanyon.png");
   height: 45vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,8 +10,8 @@
   margin-right: 2.25%;
 }
 
-.golden {
-  background-image: url("../images/golden.png");
+.eldo {
+  background-image: url("../images/eldo.png");
   height: 45vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,8 +19,9 @@
   float: left;
 }
 
-.lyons {
-  background-image: url("../images/lyons.png");
+
+.eldoMtn {
+  background-image: url("../images/eldoMtn.png");
   height: 45vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,8 +33,8 @@
 
 }
 
-.sPlatte {
-  background-image: url("../images/sPlatte.png");
+.flagstaff {
+  background-image: url("../images/flagstaff.png");
   height: 45vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,19 +43,24 @@
   margin-top: 2.25%;
 }
 
-.evergreen {
-  background-image: url("../images/evergreen.png");
+.flatirons {
+  background-image: url("../images/flatirons.png");
   height: 45vw;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
   float: left;
+  margin-left: 3.25%;
+  margin-right: 2.25%;
+  margin-top: 2.25%;
 }
-.estes {
-  background-image: url("../images/estesPark.png");
+
+.upperDream {
+  background-image: url("../images/upperDream.png");
   height: 45vw;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
   float: left;
+  margin-top: 2.25%;
 }

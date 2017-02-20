@@ -97,6 +97,22 @@ module.exports = function (app) {
         })
     });
 
+    app.get('/routeFinder', checkIfLoggedIn, function(req, res){
+
+        User.findOne({_id: req.session.uid}, function(err, user){
+            res.sendFile('routeFinder.html', {root: APP_DIR +'/public'})
+            console.log("Sending to Routes Page");
+        })
+    });
+
+    app.get('/grade', checkIfLoggedIn, function(req, res){
+
+        User.findOne({_id: req.session.uid}, function(err, user){
+            res.sendFile('grade.html', {root: APP_DIR +'/public'})
+            console.log("Sending to Grade Page");
+        })
+    });
+
 
 
 

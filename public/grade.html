@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html ng-app="tradApp">
+  <head>
+      <meta charset="utf-8">
+    <!-- CSS PAGES -->
+      <link rel="stylesheet" type="text/css" href="/css/profile.css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css">
+      <link rel="stylesheet" type="text/css" href="/css/grade.css">
+    <!-- BOOTSTRAP -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!---ANGULAR ROUTER-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <!--angularRouter.js-->
+      <script src="/js/routesModule.js"></script>
+      <script src="/js/controller.js"></script>
+
+      <script src="/js/angularRouter.js"></script>
+    <!--AJAX-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--Favicon-->
+      <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+    <title>Tradist</title>
+  </head>
+  <body class="body">
+    <input type="checkbox" class="check" id="checked">
+    <label class="menu-btn" for="checked">
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+        <span class="menu-btn__text">MENU</span>
+    </label>
+    <label class="close-menu" for="checked"></label>
+    <nav class="drawer-menu">
+        <ul>
+            <li><a ng-href="/routeFinder#/areas">Home</a></li>
+            <li><a href="/gear">Add Some Gear</a></li>
+            <li><a href="#/skil">Update Difficulty</a></li>
+            <li><a href="/logout">Log Out</a></li>
+        </ul>
+    </nav>
+    <div class="center-on-page">
+        <h1>Max Difficulty</h1>
+        <div class="select">
+            <select name="slct" id="slct">
+              <option>Choose a max grade</option>
+              <option value="1">5.0</option>
+              <option value="2">5.1</option>
+              <option value="3">5.2</option>
+              <option value="4">5.3</option>
+              <option value="5">5.4</option>
+              <option value="6">5.5</option>
+              <option value="7">5.6</option>
+              <option value="8">5.7</option>
+              <option value="9">5.8</option>
+              <option value="10">5.9</option>
+              <option value="11">5.10a</option>
+              <option value="12">5.10b</option>
+              <option value="13">5.10c</option>
+              <option value="14">5.10d</option>
+              <option value="15">5.11a</option>
+              <option value="16">5.11b</option>
+              <option value="17">5.11c</option>
+              <option value="18">5.11d</option>
+              <option value="19">5.12a</option>
+              <option value="14">5.12b</option>
+              <option value="15">5.12c</option>
+              <option value="16">5.12d</option>
+              <option value="17">5.13a</option>
+              <option value="18">5.13b</option>
+              <option value="19">5.13c</option>
+              <option value="14">5.13d</option>
+              <option value="15">5.14a</option>
+              <option value="16">5.14b</option>
+              <option value="17">5.14c</option>
+              <option value="18">5.14d</option>
+              <option value="19">5.15a</option>
+              <option value="18">5.15b</option>
+              <option value="19">5.15c</option>
+            </select>
+  	     </div>
+         <br/>
+         <br/>
+         <h1>Minimum Difficulty</h1>
+         <div class="select">
+             <select name="slct" id="slct">
+               <option>Choose a minimum grade</option>
+               <option value="1">5.0</option>
+               <option value="2">5.1</option>
+               <option value="3">5.2</option>
+               <option value="4">5.3</option>
+               <option value="5">5.4</option>
+               <option value="6">5.5</option>
+               <option value="7">5.6</option>
+               <option value="8">5.7</option>
+               <option value="9">5.8</option>
+               <option value="10">5.9</option>
+               <option value="11">5.10a</option>
+               <option value="12">5.10b</option>
+               <option value="13">5.10c</option>
+               <option value="14">5.10d</option>
+               <option value="15">5.11a</option>
+               <option value="16">5.11b</option>
+               <option value="17">5.11c</option>
+               <option value="18">5.11d</option>
+               <option value="19">5.12a</option>
+               <option value="14">5.12b</option>
+               <option value="15">5.12c</option>
+               <option value="16">5.12d</option>
+               <option value="17">5.13a</option>
+               <option value="18">5.13b</option>
+               <option value="19">5.13c</option>
+               <option value="14">5.13d</option>
+               <option value="15">5.14a</option>
+               <option value="16">5.14b</option>
+               <option value="17">5.14c</option>
+               <option value="18">5.14d</option>
+               <option value="19">5.15a</option>
+               <option value="18">5.15b</option>
+               <option value="19">5.15c</option>
+             </select>
+   	     </div>
+      </div>
+  </body>
+</html>

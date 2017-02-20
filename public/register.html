@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html ng-app="module.auth">
     <head>
-        <title>Sign Up!</title>
+        <!--CSS PAGES-->
         <link rel='stylesheet' href="/css/main.css">
+        <link rel='stylesheet' href="/css/profile.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
         <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!--AJAX-->
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
         <script src="/js/module.auth.js"></script>
+
         <!--Favicons-->
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
@@ -24,8 +32,25 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        
+        <title>Sign Up!</title>
     </head>
   <body class="body" ng-controller="module.auth.controller as auth">
+    <input type="checkbox" class="check" id="checked">
+    <label class="menu-btn" for="checked">
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+        <span class="menu-btn__text">MENU</span>
+    </label>
+    <label class="close-menu" for="checked"></label>
+    <nav class="drawer-menu">
+        <ul>
+            <li><a href="/">Sign In</a></li>
+            <li><a href="/">Our Misson</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
     <div>
     <div class="title1">
       <div class="title2">
@@ -46,7 +71,7 @@
                 <input id="remember" type="checkbox"> Remember me</input><br>
                 <!-- </label> -->
                 <br/>
-                <button type="submit" class="pure-button pure-button-primary">Register</button>
+                <button type="submit" class="customButton">Register</button>
                 <p ng-class="auth.register.alert">{{ auth.register.message }}</p>
             </fieldset>
           </form>

@@ -1,55 +1,3 @@
-.profile {
-  background-color: rgb (26,27,17);
-}
-
-.profilePic1 {
-  width: auto;
-  height: 30vw;
-  background-image: url("../images/profileHeader.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-.profilePic2 {
-  /*display: inline;
-  width: 33%;*/
-  height: 30vw;
-  /*background-image: url("../images/mountainsProfile.png");*/
-  /*background-repeat:no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  padding-bottom: 20%;*/
-}
-
-.row1 {
-  letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: middle;
-  text-rendering: auto;
-  display: inline-block;
-  zoom: 1;
-  width: 32.3333%;
-}
-
-.pic {
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 15%;
-}
-
-.gearDiv1 {
-width: 100%;
-}
-
-.gearDiv2 {
-  background-color: rgb(233,237, 237);
-  width: 96%;
-  min-height: 70vh;
-  max-height: 1000vh;
-  margin-left: 2vw;
-  border-radius: 20px;
-}
 
 .gearAdd {
   /*padding-left: 20%;*/
@@ -61,36 +9,260 @@ width: 100%;
   text-align: center;
 }
 
-.gearList1 {
-  overflow: hidden;
-  overflow-x: scroll;
-  height: 40vw;
-  width: 100%;
-}
-.gearList2 {
-  -moz-column-count: 6;
-  -moz-column-gap: 3%;
-  -webkit-column-count: 6;
-  -webkit-column-gap: 3%;
-  column-count: 6;
-  column-gap: 3;
-}
-
-.climbsDiv1 {
-width: 100%;
-padding-top: 2vh;
-}
-
-.climbsDiv2 {
-  background-color: rgb(233,237, 237);
-  width: 96%;
-  min-height: 70vh;
-  max-height: 1000vh;
-  margin-left: 2vw;
-  border-radius: 20px;
-}
-
 .routeList {
   list-style: none;
   text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding-top: .5vh;
+  padding-bottom: .5vh;
+}
+.routesFinder {
+  list-style: none;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+
+.routeList:hover {
+  color: #1a1e24;
+  background: #fff;
+}
+
+/* common */
+body {
+    margin: 0;
+    padding: 0;
+    background: #666;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+	list-style: none;
+}
+
+/* contents */
+.contents {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: rgb (26,27,17);
+    box-shadow: 0 0 50px 0 rgba(0,0,0,.8);
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.contents__inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.contents__inner h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 40px;
+    font-family: Futura, "Century Gothic", "helvetica neue", arial, sans-serif !important;
+    font-style: italic;
+}
+
+.contents__inner p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contents__inner p span {
+    border-bottom: 1px solid #fff;
+}
+
+/* drawer menu */
+.drawer-menu {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    padding: 120px 0;
+    background: #1A1B11;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: perspective(500px) rotateY(-90deg);
+    transform: perspective(500px) rotateY(-90deg);
+    opacity: 0;
+}
+
+.drawer-menu li {
+    text-align: center;
+}
+
+.drawer-menu li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #fff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.drawer-menu li a:hover {
+    color: #1a1e24;
+    background: #fff;
+}
+
+/* checkbox */
+.check {
+    display: none;
+}
+
+/* menu button - label tag */
+.menu-btn {
+    position: fixed;
+    display: block;
+    top: 40px;
+    left: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+}
+
+.bar.middle {
+    top: 15px;
+    opacity: 1;
+}
+
+.bar.bottom {
+    top: 30px;
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+
+.menu-btn__text {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-btn:hover .bar {
+    background: #999;
+}
+
+.menu-btn:hover .menu-btn__text {
+    color: #999;
+}
+
+.close-menu {
+    position: fixed;
+    top: 0;
+    right: 300px;
+    width: 100%;
+    height: 100vh;
+    background: rgb(36,38,19);
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* checked */
+.check:checked ~ .drawer-menu {
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1;
+    z-index: 2;
+}
+
+.check:checked ~ .contents {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    transform: translateX(-300px);
+}
+
+.check:checked ~ .menu-btn .menu-btn__text {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.check:checked ~ .menu-btn .bar.top {
+    width: 56px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check:checked ~ .menu-btn .bar.middle {
+    opacity: 0;
+}
+
+.check:checked ~ .menu-btn .bar.bottom {
+    width: 56px;
+    top: 40px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.check:checked ~ .close-menu {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    background: rgba(0,0,0,.5);
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
 }

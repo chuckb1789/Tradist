@@ -25,7 +25,7 @@ function Auth($http) { // window.Auth
         success: function(res) { // server response callback
             // when login is successful, redirect them into the dashboard
             console.info('auth.login.success', res.data);
-            location.href = '/profile';
+            location.href = '/routeFinder#/areas';
         },
         error: function(err) {
             console.error('Login.error', err);
@@ -44,7 +44,7 @@ function Auth($http) { // window.Auth
         success: function(res) {
             // when register is successful, just redirect them into the dashboard (already logged in)
             console.info('auth.register.success', res.data);
-            location.href = "/profile";
+            location.href = "/routeFinder#/areas";
         },
         error: function(err) {
             console.error('auth.register.error', err);

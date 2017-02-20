@@ -1,4 +1,4 @@
-angular.module("tradApp" )
+angular.module("tradApp")
        .config(angularRouter)
 
 angularRouter.$inject = ['$routeProvider']
@@ -7,7 +7,7 @@ function angularRouter ($routeProvider) {
     $routeProvider
         .when('/areas',
             {
-                templateUrl: '/htmlPartials/areas.html'
+              templateUrl: '/htmlPartials/areas.html'
             })
         .when('/boulder',
             {
@@ -29,6 +29,11 @@ function angularRouter ($routeProvider) {
             {
               templateUrl: '/htmlPartials/eldo.html',
               controller: 'routesController'
-            });
+            })
+        .when('/outerFace',
+            {
+              templateUrl: '/htmlPartials/outerFace.html'
+            })
+
 
 }

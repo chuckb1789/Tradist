@@ -40,3 +40,22 @@
   width: 100%;
   min-width: 80%;
 }
+
+.customButton {
+  background-color: #954a32;
+  color: #000000;
+  height: 5vw;
+  width: 10vw;
+  border-radius: 10px;
+  font-size: 18px;
+
+}
+.customButton:hover {
+  background-color: #999999;
+  color: #954a32;
+  transition: 1s all ease;
+}
+.signUpButton {
+  text-align: center;
+  margin-left: 2.5%;
+}

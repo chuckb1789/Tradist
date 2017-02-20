@@ -1,0 +1,44 @@
+.boxGrid {
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  display: inline-block;
+  zoom: 1;
+  width: 96%;
+}
+.box1 {
+  background-color: #9f9f9f;
+  height: 30vh;
+  border-radius: 10px;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.left {
+  text-align: left;
+  padding-left: 7%;
+}
+
+.box2 {
+  background-color: #9f9f9f;
+  height: 30vh;
+  border-radius: 10px;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+
+.box3 {
+  background-color: #9f9f9f;
+  height: 30vh;
+  border-radius: 10px;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
