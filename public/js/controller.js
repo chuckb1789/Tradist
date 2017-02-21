@@ -17,8 +17,9 @@ function routesFunction($http) {
   routesCtrl.routesClimbable = [];
   routesCtrl.maxGrade = "";
   routesCtrl.minGrade = "";
-  routesCtrl.maxGradeMenu = "";
-  routesCtrl.minGradeMenu = "";
+  routesCtrl.maxGradeMenu = "5.0";
+  routesCtrl.minGradeMenu = "5.15c";
+  routesCtrl.username = ""
 
   routesCtrl.getGrades = function () {
 
@@ -26,6 +27,7 @@ function routesFunction($http) {
        .then(function success(res) {
           routesCtrl.maxGrade = res.data.maxGrade
           routesCtrl.minGrade = res.data.minGrade
+          routesCtrl.username = res.data.username
           console.log("USER DATA: ", res.data);
           routesCtrl.getRoutes();
          })
@@ -49,8 +51,8 @@ function routesFunction($http) {
                 var minDiff = parseInt(routesCtrl.minGrade) - 1;
                 var maxDiff = parseInt(routesCtrl.maxGrade) - 1;
 
-                routesCtrl.maxGradeMenu = diffRange[maxDiff + 1];
-                routesCtrl.minGradeMenu = diffRange[minDiff + 1];
+                routesCtrl.maxGradeMenu = diffRange[maxDiff];
+                routesCtrl.minGradeMenu = diffRange[minDiff];
                 console.log("MAXGRADEMENUE: ", routesCtrl.maxGradeMenu)
 
                 console.log("Range: ", minDiff, maxDiff)

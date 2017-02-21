@@ -19,6 +19,7 @@ module.exports = function (app) {
 
     var UserSchema = new mongoose.Schema({
         name:  String,
+        username: String,
         email: {
             type: String,
             unique: true
@@ -241,27 +242,6 @@ module.exports = function (app) {
            var tmpUser = user
            tmpUser.password = "notapassword"
            res.send(tmpUser)
-          //  var deleted = function(){return (delete tmpUser.password)}
-          //  if (!deleted) {
-          //    while (!deleted){}
-          //  } else {console.log('user: ',tmpUser);res.send(tmpUser)}
-          // while (delete tmpUser)
-          // for (var flowcontrol in [1,1]){
-          //   if (flowcontrol === '0'){
-          //     user.password = ''
-          //     delete user.password
-          //     var tmpUser = user
-          //     tmpUser.password = ''
-          //     delete tmpUser.password
-          //   }
-          //   if (flowcontrol === '1') {
-          //     console.log("USER:", tmpUser);
-          //     res.send(tmpUser);
-          //
-          //   }
-          // }
-            //delete user.password
-
       });
   });
 
