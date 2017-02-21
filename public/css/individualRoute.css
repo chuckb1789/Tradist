@@ -12,10 +12,11 @@
   background-color: #9f9f9f;
   height: 30vh;
   border-radius: 10px;
-  float: left;
+  float: center;
   margin-left: 2%;
   margin-right: 2%;
   min-height: 300px;
+  max-width: 1500px;
 }
 
 .row1 {
@@ -50,11 +51,12 @@
   background-color: #9f9f9f;
   height: 30vh;
   border-radius: 10px;
-  float: left;
+  float: center;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2%;
   min-height: 300px;
+  max-width: 1500px;
 }
 
 
@@ -62,12 +64,13 @@
   background-color: #9f9f9f;
   height: 40vh;
   border-radius: 10px;
-  float: left;
+  float: center;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2%;
   margin-bottom: 2%;
   min-height: 500px;
+  max-width: 1500px;
 }
 .right3 {
   height: 100%;
