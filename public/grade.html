@@ -40,7 +40,7 @@
       <meta name="theme-color" content="#ffffff">
     <title>Tradist</title>
   </head>
-  <body class="body">
+  <body ng-controller="routesController as routesCtrl" class="body">
     <input type="checkbox" class="check" id="checked">
     <label class="menu-btn" for="checked">
         <span class="bar top"></span>
@@ -51,6 +51,11 @@
     <label class="close-menu" for="checked"></label>
     <nav class="drawer-menu">
         <ul>
+            <li class="welcome"><h4>Welcome Back Charlie!</h4></li>
+            <li class="welcome"><h5>Grade Range: {{routesCtrl.minGradeMenu}} to {{routesCtrl.maxGradeMenu}}</h5></li>     
+            <br/>
+            <br/>
+            <br/>
             <li><a ng-href="/routeFinder#/areas">Home</a></li>
             <li><a href="/gear">Add Some Gear</a></li>
             <li><a href="#/skil">Update Difficulty</a></li>
@@ -59,11 +64,15 @@
     </nav>
     <br/>
     <div class="titleImage"></div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <div class="center-on-page">
-        <form>
-        <h1>Max Difficulty</h1>
+        <form class="form">
+        <h1>Max Rating</h1>
         <div class="select">
-            <select name="slct" id="slct">
+            <select ng-model="routesCtrl.profile.maxGrade" name="slct" id="slct">
               <option>Choose a max grade</option>
               <option value="1">5.0</option>
               <option value="2">5.1</option>
@@ -102,9 +111,9 @@
   	     </div>
          <br/>
          <br/>
-         <h1>Minimum Difficulty</h1>
+         <h1>Minimum Rating</h1>
          <div class="select">
-             <select name="slct" id="slct">
+             <select ng-model="routesCtrl.profile.minGrade" name="slct" id="slct">
                <option>Choose a minimum grade</option>
                <option value="1">5.0</option>
                <option value="2">5.1</option>
@@ -141,8 +150,9 @@
                <option value="19">5.15c</option>
              </select>
    	     </div>
-         <input class="gradeButton customButton" ng-click="routesCtrl.grade()" type="submit" value="Submit">
-         <p ng-class="gradeSubmit.alert">{{ gradeSubmit.message }}</p>
+         <button class="gradeButton customButton" ng-click="routesCtrl.updateGrade()">Submit</button>
+         <br/><br/>
+         <p class="message">{{ routesCtrl.updateGrade.message }}</p>
        </form>
       </div>
   </body>

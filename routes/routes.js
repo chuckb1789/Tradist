@@ -12,6 +12,11 @@ module.exports = function (app) {
 
     mongoose.connect('mongodb://localhost/authdemo');
 
+    // var ProfileSchema = new mongoose.Schema({
+    //     maxGrade:  String,
+    //     minGrade: String
+    // });
+
     var UserSchema = new mongoose.Schema({
         name:  String,
         email: {
@@ -22,10 +27,15 @@ module.exports = function (app) {
         created: {
             type: Number,
             default: function(){ return Date.now() }
-        }
+        },
+
+        maxGrade: String,
+        minGrade: String
+
     });
 
     var User = mongoose.model('User', UserSchema)
+    // var Profile = mongoose.model('Profile', ProfileSchema)
 
     var APP_DIR=process.env.APP_DIR
     var APIKEY=process.env.APIKEY
@@ -200,21 +210,60 @@ module.exports = function (app) {
 
     app.get('/NBastille/routes', NBastilleLibrary.routes);
 
-    // unirest.post("https://community-sentiment.p.mashape.com/batch/")
-    //     .header("X-Mashape-Key", "HVDEIORzr7mshxcS5tYJyLfzkBiDp1wJQ56jsnxPbteT9Sgdpy")
-    //     .header("Content-Type", "application/x-www-form-urlencoded")
-    //     .header("Accept", "application/json")
-    //     .send(myJson)
-    //     .end(function(result){
-    //         newsSentimentArray = result.body;
-    //     });
-    //
+
     eldo = 'https://api.darksky.net/forecast/'+APIKEY+'/39.940786,-105.255930'
 
     app.get('/weather', function(req,res) {
         console.log("ENTER WEATHER GET FUNCTION")
         request.get('https://api.darksky.net/forecast/'+APIKEY+'/39.940786,-105.255930',function(error,response,body){ res.send(body) })});
 
+    app.put('/gradeUpdate', function(req,res) {
+        console.log("Updating Difficulty")
+
+        var gradeRange = req.body;
+        console.log(req.body);
+
+
+        User.findOneAndUpdate({ _id : req.session.uid  }, gradeRange, { upsert: true }, function(err) {
+                    if (err) {
+                        console.log("Database error:", err);
+                        res.send("Please reload the page and try again.")
+                    } else {
+                        console.log("Database save successful")
+                        res.send("Updated Range Succesfully!")
+                    }
+        });
+    });
+
+    app.get('/userGrades', function(req, res) {
+        console.log("Grabbing User Info")
+        User.findOne({_id: req.session.uid}, function(err, user){
+           var tmpUser = user
+           tmpUser.password = "notapassword"
+           res.send(tmpUser)
+          //  var deleted = function(){return (delete tmpUser.password)}
+          //  if (!deleted) {
+          //    while (!deleted){}
+          //  } else {console.log('user: ',tmpUser);res.send(tmpUser)}
+          // while (delete tmpUser)
+          // for (var flowcontrol in [1,1]){
+          //   if (flowcontrol === '0'){
+          //     user.password = ''
+          //     delete user.password
+          //     var tmpUser = user
+          //     tmpUser.password = ''
+          //     delete tmpUser.password
+          //   }
+          //   if (flowcontrol === '1') {
+          //     console.log("USER:", tmpUser);
+          //     res.send(tmpUser);
+          //
+          //   }
+          // }
+            //delete user.password
+
+      });
+  });
 
 
 };

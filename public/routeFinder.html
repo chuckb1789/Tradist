@@ -44,7 +44,7 @@
       <meta name="theme-color" content="#ffffff">
     <title>Tradist</title>
   </head>
-  <body class="body">
+  <body class="body"  ng-controller="routesController as routesCtrl">
     <input type="checkbox" class="check" id="checked">
     <label class="menu-btn" for="checked">
         <span class="bar top"></span>
@@ -55,6 +55,11 @@
     <label class="close-menu" for="checked"></label>
     <nav class="drawer-menu">
         <ul>
+            <li class="welcome"><h4>Welcome Back Charlie!</h4></li>
+            <li class="welcome"><h5>Grade Range: {{routesCtrl.minGradeMenu}} to {{routesCtrl.maxGradeMenu}}</h5></li>
+            <br/>
+            <br/>
+            <br/>
             <li><a ng-href="#/areas">Home</a></li>
             <li><a href="/gear">Add Some Gear</a></li>
             <li><a href="/grade">Update Difficulty</a></li>
@@ -65,7 +70,7 @@
     <a ng-href="#/areas"><div class="titleImage"></div></a>
     <div class="contents">
         <div class="contents__inner">
-            <ng-view ng-controller="routesController as routesCtrl">
+            <ng-view>
             </ng-view>
   	     </div>
       </div>

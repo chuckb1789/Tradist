@@ -6,16 +6,19 @@
   text-rendering: auto;
   display: inline-block;
   zoom: 1;
+  max-width: 500px;
+  max-height: 500px;
   width: 45%;
 }
 .boulder {
   background-image: url("../images/boulder.png");
   height: 45vw;
+  max-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  float: left;
-  margin-left: 3.25%;
+  float: center;
+  /*margin-left: 2.25%;*/
   margin-right: 2.25%;
   -webkit-transition: .2s;
 }
@@ -28,10 +31,11 @@
 .golden {
   background-image: url("../images/golden.png");
   height: 45vw;
+  max-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  float: left;
+  float: center;
   -webkit-transition: .2s;
 }
 .golden:hover {
@@ -43,11 +47,12 @@
 .lyons {
   background-image: url("../images/lyons.png");
   height: 45vw;
+  max-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  float: left;
-  margin-left: 3.25%;
+  float: center;
+  /*margin-left: 2.25%;*/
   margin-right: 2.25%;
   margin-top: 2.25%;
   -webkit-transition: .2s;
@@ -60,11 +65,12 @@
 
 .sPlatte {
   background-image: url("../images/sPlatte.png");
+  max-height: 500px;
   height: 45vw;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  float: left;
+  float: center;
   margin-top: 2.25%;
   -webkit-transition: .2s;
 }
