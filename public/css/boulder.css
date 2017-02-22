@@ -10,11 +10,9 @@
   -webkit-transition: .2s;
 }
 .bcc:hover {
-  transition: .2s;
-  background-image: url("../images/boulderCanyon.png");
-  transform: perspective(500px) rotateY(15deg);
-  -webkit-transition: .2s;
+  animation: shake 2s;
 }
+
 .eldo {
   background-image: url("../images/eldo.png");
   height: 45vw;
@@ -25,11 +23,8 @@
   -webkit-transition: .2s;
 }
 .eldo:hover {
-  transition: .2s;
-  background-image: url("../images/eldo.png");
-  transform: perspective(500px) rotateY(-15deg);
+  animation: shake 2s;
 }
-
 
 .eldoMtn {
   background-image: url("../images/eldoMtn.png");
@@ -44,9 +39,7 @@
 
 }
 .eldoMtn:hover {
-  transition: .2s;
-  background-image: url("../images/eldoMtn.png");
-  transform: perspective(500px) rotateY(15deg);
+  animation: shake 2s;
 }
 
 .flagstaff {
@@ -60,9 +53,7 @@
   -webkit-transition: .2s;
 }
 .flagstaff:hover {
-  transition: .2s;
-  background-image: url("../images/flagstaff.png");
-  transform: perspective(500px) rotateY(-15deg);
+  animation: shake 2s;
 }
 
 .flatirons {
@@ -77,10 +68,9 @@
   -webkit-transition: .2s;
 }
 .flatirons:hover {
-  transition: .2s;
-  background-image: url("../images/flatirons.png");
-  transform: perspective(500px) rotateY(15deg);
+  animation: shake 2s;
 }
+
 .upperDream {
   background-image: url("../images/upperDream.png");
   height: 45vw;
@@ -92,7 +82,29 @@
   -webkit-transition: .2s;
 }
 .upperDream:hover {
-  transition: .2s;
-  background-image: url("../images/upperDream.png");
-  transform: perspective(500px) rotateY(-15deg);
+  animation: shake 2s;
+}
+
+@keyframes shake
+{
+  0%  { transform: perspective(500px) rotateY(-5deg); }
+  5%  { transform: perspective(500px) rotateY(5deg); }
+  10% { transform: perspective(500px) rotateY(-4.5deg); }
+  15% { transform: perspective(500px) rotateY(4.5deg); }
+  20% { transform: perspective(500px) rotateY(-4deg); }
+  30% { transform: perspective(500px) rotateY(4deg); }
+  35% { transform: perspective(500px) rotateY(-3.5deg); }
+  40% { transform: perspective(500px) rotateY(3.5deg); }
+  45% { transform: perspective(500px) rotateY(-3deg); }
+  50% { transform: perspective(500px) rotateY(3deg); }
+  55% { transform: perspective(500px) rotateY(-2.5deg); }
+  60% { transform: perspective(500px) rotateY(2.5deg); }
+  65% { transform: perspective(500px) rotateY(-2deg); }
+  70% { transform: perspective(500px) rotateY(2deg); }
+  75% { transform: perspective(500px) rotateY(-1.5deg); }
+  80% { transform: perspective(500px) rotateY(1.5deg); }
+  85% { transform: perspective(500px) rotateY(-1deg); }
+  90% { transform: perspective(500px) rotateY(1deg); }
+  95% { transform: perspective(500px) rotateY(-.5deg); }
+  100% { transform: perspective(0px) rotateY(0deg) }
 }

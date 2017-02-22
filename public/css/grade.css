@@ -28,8 +28,7 @@ select {
   outline: 0;
   box-shadow: none;
   border: 0 !important;
-  background: #e5f6ed;
-  /*background: #2c3e50;*/
+  background: white;
   background-image: none;
 }
 /* Custom Select */
@@ -41,7 +40,7 @@ select {
   line-height: 3;
   background: #2c3e50;
   overflow: hidden;
-  border-radius: .25em;
+  border-radius: 6em;
 }
 select {
   width: 100%;
@@ -62,7 +61,7 @@ select::-ms-expand {
   right: 0;
   bottom: 0;
   padding: 0 1em;
-  background: #34495e;
+  background: white;
   pointer-events: none;
 }
 /* Transition */

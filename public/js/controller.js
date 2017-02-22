@@ -9,7 +9,7 @@ function routesFunction($http) {
   routesCtrl.title = "ROUTE FINDER";
   console.log(routesCtrl.title);
 
-
+  //Variables that will be used
   routesCtrl.weather = [];
   routesCtrl.routeInfo=[];
   routesCtrl.routes = [];
@@ -21,6 +21,7 @@ function routesFunction($http) {
   routesCtrl.minGradeMenu = "";
   routesCtrl.username = "";
 
+  //Functions that will be called
   routesCtrl.getGrades = function () {
 
        $http.get("/userGrades")
@@ -102,11 +103,6 @@ function routesFunction($http) {
        minGrade: ""
    };
 
-
-
-
-
-
    routesCtrl.updateGrade = {
      message: ""
    };
@@ -124,7 +120,21 @@ function routesFunction($http) {
                       routesCtrl.profile.maxGrade = res.data.maxGrade
                       routesCtrl.profile.minGrade = res.data.minGrade
                       console.log(res.data);
+
+
+                      var diffRange = ["5.0", "5.1", "5.2", "5.3", "5.4", "5.5", "5.6", "5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b", "5.11c", "5.11d", "5.12a", "5.12b", "5.12c", "5.12d", "5.13a", "5.13b", "5.13c", "5.13d", "5.14a", "5.14b", "5.14c", "5.14d", "5.15a", "5.15b", "5.15c"]
+
+                      var minDiff = parseInt(routesCtrl.profile.minGrade) - 1;
+                      var maxDiff = parseInt(routesCtrl.profile.maxGrade) - 1;
+
+                      routesCtrl.maxGradeMenu = diffRange[maxDiff];
+                      routesCtrl.minGradeMenu = diffRange[minDiff];
                   })
+                  .then(function redirect() {
+                    setInterval(location.href = '/routeFinder#/areas', 50000)
+                  }
+                )
+                redirect();
                 })
                 .catch(function(err){console.log("Update via put failed, caught error: ",err)})
     };

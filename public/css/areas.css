@@ -1,4 +1,6 @@
-
+#alert {
+  height: 14px;
+}
 .routeGrid {
   letter-spacing: normal;
   word-spacing: normal;
@@ -6,8 +8,8 @@
   text-rendering: auto;
   display: inline-block;
   zoom: 1;
-  max-width: 700px;
-  max-height: 700px;
+  max-width: 400px;
+  max-height: 400px;
   width: 45%;
 }
 .boulder {
@@ -19,12 +21,12 @@
   float: center;
   /*margin-left: 2.25%;*/
   margin-right: 2.25%;
-  -webkit-transition: .2s;
+  /*animation: shake 2s infinite;*/
 }
 .boulder:hover {
-  transition: .2s;
   background-image: url("../images/boulder.png");
-  transform: perspective(500px) rotateY(15deg);
+  animation: shake 2s;
+
 }
 
 .golden {
@@ -35,11 +37,11 @@
   border-radius: 10px;
   float: center;
   -webkit-transition: .2s;
+  /*animation: shake 2s infinite;*/
 }
 .golden:hover {
-  transition: .2s;
-  background-image: url("../images/golden.png");
-  transform: perspective(500px) rotateY(-15deg);
+  animation: shake 2s;
+
 }
 
 .lyons {
@@ -53,11 +55,11 @@
   margin-right: 2.25%;
   margin-top: 2.25%;
   -webkit-transition: .2s;
+  /*animation: shake 2s infinite;*/
+
 }
 .lyons:hover {
-  transition: .2s;
-  background-image: url("../images/lyons.png");
-  transform: perspective(500px) rotateY(15deg);
+  animation: shake 2s;
 }
 
 .sPlatte {
@@ -69,9 +71,31 @@
   float: center;
   margin-top: 2.25%;
   -webkit-transition: .2s;
+  /*animation: shake 2s infinite;*/
 }
 .sPlatte:hover {
-  transition: .2s;
-  background-image: url("../images/sPlatte.png");
-  transform: perspective(500px) rotateY(-15deg);
+  animation: shake 2s;
+}
+@keyframes shake
+{
+  0%  { transform: perspective(500px) rotateY(-5deg); }
+  5%  { transform: perspective(500px) rotateY(5deg); }
+  10% { transform: perspective(500px) rotateY(-4.5deg); }
+  15% { transform: perspective(500px) rotateY(4.5deg); }
+  20% { transform: perspective(500px) rotateY(-4deg); }
+  30% { transform: perspective(500px) rotateY(4deg); }
+  35% { transform: perspective(500px) rotateY(-3.5deg); }
+  40% { transform: perspective(500px) rotateY(3.5deg); }
+  45% { transform: perspective(500px) rotateY(-3deg); }
+  50% { transform: perspective(500px) rotateY(3deg); }
+  55% { transform: perspective(500px) rotateY(-2.5deg); }
+  60% { transform: perspective(500px) rotateY(2.5deg); }
+  65% { transform: perspective(500px) rotateY(-2deg); }
+  70% { transform: perspective(500px) rotateY(2deg); }
+  75% { transform: perspective(500px) rotateY(-1.5deg); }
+  80% { transform: perspective(500px) rotateY(1.5deg); }
+  85% { transform: perspective(500px) rotateY(-1deg); }
+  90% { transform: perspective(500px) rotateY(1deg); }
+  95% { transform: perspective(500px) rotateY(-.5deg); }
+  100% { transform: perspective(0px) rotateY(0deg) }
 }
