@@ -30,8 +30,12 @@ module.exports = function (app) {
             default: function(){ return Date.now() }
         },
 
-        maxGrade: String,
-        minGrade: String
+        maxGrade: { type: String,
+                    default: "34"
+        },
+        minGrade: { type: String,
+                    default: "1"
+        }
 
     });
 

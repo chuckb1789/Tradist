@@ -44,7 +44,7 @@ function Auth($http) { // window.Auth
         success: function(res) {
             // when register is successful, just redirect them into the dashboard (already logged in)
             console.info('auth.register.success', res.data);
-            location.href = "/routeFinder#/areas";
+            location.href = "/grade";
         },
         error: function(err) {
             console.error('auth.register.error', err);
