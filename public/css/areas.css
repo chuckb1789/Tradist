@@ -1,5 +1,6 @@
 #alert {
-  height: 14px;
+  height: 20px;
+  color: white;
 }
 .routeGrid {
   letter-spacing: normal;
@@ -8,9 +9,12 @@
   text-rendering: auto;
   display: inline-block;
   zoom: 1;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 700px;
+  max-height: 700px;
   width: 45%;
+  /*z-index: 2;*/
+  /*position: relative;*/
+  /*margin-top: 10%;*/
 }
 .boulder {
   background-image: url("../images/boulder.png");
@@ -78,24 +82,25 @@
 }
 @keyframes shake
 {
-  0%  { transform: perspective(500px) rotateY(-5deg); }
-  5%  { transform: perspective(500px) rotateY(5deg); }
-  10% { transform: perspective(500px) rotateY(-4.5deg); }
-  15% { transform: perspective(500px) rotateY(4.5deg); }
-  20% { transform: perspective(500px) rotateY(-4deg); }
-  30% { transform: perspective(500px) rotateY(4deg); }
-  35% { transform: perspective(500px) rotateY(-3.5deg); }
-  40% { transform: perspective(500px) rotateY(3.5deg); }
-  45% { transform: perspective(500px) rotateY(-3deg); }
-  50% { transform: perspective(500px) rotateY(3deg); }
-  55% { transform: perspective(500px) rotateY(-2.5deg); }
-  60% { transform: perspective(500px) rotateY(2.5deg); }
-  65% { transform: perspective(500px) rotateY(-2deg); }
-  70% { transform: perspective(500px) rotateY(2deg); }
-  75% { transform: perspective(500px) rotateY(-1.5deg); }
-  80% { transform: perspective(500px) rotateY(1.5deg); }
-  85% { transform: perspective(500px) rotateY(-1deg); }
-  90% { transform: perspective(500px) rotateY(1deg); }
-  95% { transform: perspective(500px) rotateY(-.5deg); }
-  100% { transform: perspective(0px) rotateY(0deg) }
+  0%  { transform: perspective(500px) rotateY(-2deg); }
+  5%  { transform: perspective(500px) rotateY(2deg); }
+  10% { transform: perspective(500px) rotateY(-2deg); }
+  15% { transform: perspective(500px) rotateY(2deg); }
+  20% { transform: perspective(500px) rotateY(-2deg); }
+  25% { transform: perspective(500px) rotateY(2deg); }
+  30% { transform: perspective(500px) rotateY(-2deg); }
+  35% { transform: perspective(500px) rotateY(2deg); }
+  40% { transform: perspective(500px) rotateY(-2deg); }
+  45% { transform: perspective(500px) rotateY(2deg); }
+  50% { transform: perspective(500px) rotateY(-2deg); }
+  55% { transform: perspective(500px) rotateY(2deg); }
+  60% { transform: perspective(500px) rotateY(-2deg); }
+  65% { transform: perspective(500px) rotateY(2deg); }
+  70% { transform: perspective(500px) rotateY(-2deg); }
+  75% { transform: perspective(500px) rotateY(2deg); }
+  80% { transform: perspective(500px) rotateY(-2deg); }
+  85% { transform: perspective(500px) rotateY(2deg); }
+  90% { transform: perspective(500px) rotateY(-2deg); }
+  95% { transform: perspective(500px) rotateY(2deg); }
+  100% { transform: perspective(500px) rotateY(-2deg); }
 }

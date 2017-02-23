@@ -63,9 +63,10 @@
         </ul>
     </nav>
     <br/>
-    <div class="titleImage"></div>
+    <a ng-href="/routeFinder#/areas"><div class="titleImage"></div></a>
     <br/>
     <br/>
+    <div id="alert"><p>{{ routesCtrl.updateGrade.message }}</p></div>
     <br/>
     <br/>
     <div class="center-on-page">
@@ -150,7 +151,7 @@
                <option value="33">5.15c</option>
              </select>
    	     </div>
-         <button class="gradeButton customButton" ng-click="routesCtrl.updateGrade()">Submit</button>
+         <button class="gradeButton customButton" ng-click="routesCtrl.updateGrade(); routesCtrl.redirect()">Submit</button>
 
        </form>
       </div>

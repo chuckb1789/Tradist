@@ -258,6 +258,7 @@ var NBastille = [
       vertical: 350,
       fa: "US Army climbers",
       year: 1954,
+      coordinates: "39.930714, -105.283176",
       fixedHardware: "2 Belay Bolts",
       protection: "Standard rack to #3 Camalot, #4 Camalot",
       description: "One of the most classic climbs in the country, it begins right off the road on the Bastille, a 350 foot cliff on the left as you enter the canyon. Often crowded, a weekday is probably the best time to attempt this climb. The climb is north facing and in the shade until mid-afternoon. To descend: follow deep grooves to the south until you reach a dirt trail. Go 30 feet west and then follow the marked Bastille descent trail north and down to the road at the base of the cliff."

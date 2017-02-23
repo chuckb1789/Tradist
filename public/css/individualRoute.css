@@ -25,24 +25,24 @@
 
 .left {
   height: 100%;
-  width: 25vw;
-  padding-left: 2%;
+  width: 20vw;
+  padding-left: 1%;
   display: inline-block;
   vertical-align: top;
 }
 
 .center {
   height: 100%;
-  width: 25vw;
-  padding-left: 2%;
+  width: 20vw;
+  padding-left: 1%;
   display: inline-block;
   vertical-align: top;
 }
 
 .right {
   height: 100%;
-  width: 25vw;
-  padding-left: 2%;
+  width: 20vw;
+  padding-left: 1%;
   display: inline-block;
   vertical-align: top;
 
@@ -73,10 +73,18 @@
   max-width: 1500px;
 }
 .right3 {
-  height: 100%;
+  height: 80%;
   width: 100%;
   padding-left: 2%;
   padding-right: 2%;
-  display: inline-block;
+  display: block;
   vertical-align: top;
+}
+.right4 {
+  height: 20%;
+  width: 100%;
+  padding-left: 2%;
+  display: block;
+  vertical-align: top;
+
 }
